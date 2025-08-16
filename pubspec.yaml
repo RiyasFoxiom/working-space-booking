@@ -1,0 +1,67 @@
+name: coworking_space_booking
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  
+  cupertino_icons: ^1.0.8
+  get: ^4.7.2
+  flutter_svg: ^2.2.0
+  carousel_slider: ^5.1.1
+  smooth_page_indicator: ^1.2.1
+  shimmer: ^3.0.0
+  cached_network_image: ^3.4.1
+  flutter_map: ^8.2.1
+  latlong2: ^0.9.1
+  easy_date_timeline: ^2.0.9
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  
+  flutter_lints: ^5.0.0
+
+
+
+
+flutter:
+
+  
+  uses-material-design: true
+
+  
+  assets:
+    - assets/images/
+  #   - images/a_dot_ham.jpeg
+
+  
+  fonts:
+    - family: Inter-Bold
+      fonts:
+        - asset: assets/fonts/Inter-Bold.ttf
+    - family: Inter-Medium
+      fonts:
+        - asset: assets/fonts/Inter-Medium.ttf
+    - family: Inter-Regular
+      fonts:  
+        - asset: assets/fonts/Inter-Regular.ttf
+    - family: Inter-SemiBold
+      fonts:
+        - asset: assets/fonts/Inter-SemiBold.ttf
+    - family: Inter-Light
+      fonts:
+        - asset: assets/fonts/Inter-Light.ttf
+
