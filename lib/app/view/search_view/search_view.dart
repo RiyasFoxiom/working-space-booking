@@ -1,5 +1,7 @@
 import 'package:coworking_space_booking/app/controllers/search_controller.dart';
+import 'package:coworking_space_booking/app/view/single_details/single_details_view.dart';
 import 'package:coworking_space_booking/core/extensions/space_ext.dart';
+import 'package:coworking_space_booking/core/screen_utils.dart';
 import 'package:coworking_space_booking/shared/widgets/app_cached_image.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -321,14 +323,7 @@ class SearchView extends StatelessWidget {
                             child: InkWell(
                               borderRadius: BorderRadius.circular(16),
                               onTap: () {
-                                Get.snackbar(
-                                  "Selected",
-                                  controller.getSpaceName(space),
-                                  backgroundColor: Colors.green[100],
-                                  colorText: Colors.green[800],
-                                  borderRadius: 12,
-                                  margin: const EdgeInsets.all(16),
-                                );
+                                Screen.open(SingleDetailsView(office: space));
                               },
                               child: Padding(
                                 padding: const EdgeInsets.all(16),
